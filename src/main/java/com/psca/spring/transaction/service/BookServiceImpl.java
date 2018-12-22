@@ -16,8 +16,8 @@ public class BookServiceImpl implements BookService {
 	@Transactional
 	public void sellBook() {
 		// TODO Auto-generated method stub
-		bookStockDao.updateStockInfo();
 		accountDao.updateBalanceInfo();
+		bookStockDao.updateStockInfo();
 	}
 
 }
